@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import useMarvelService from '../../services/MarvelService';
+
 import './charList.scss';
 
 const CharList = (props) => {
@@ -91,7 +92,7 @@ const CharList = (props) => {
         <div className="char__list">
             {errorMessage}
             {spinner}
-            {items}
+            {items}   
             <button
                 className="button button__main button__long"
                 disabled={newItemLoading}
